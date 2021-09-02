@@ -6,8 +6,7 @@ namespace SpoonPrinterCleaner.SpoonPrinterInterfaces
 {
     public interface ISpoolerPrinterService
     {
-        void TurnOffSpoonServicePrinter(); 
-        void TurnOnSpoonServicePrinter();
+        void StarStopSpoonServicePrinter(); 
         void ClearQueuePrinter();
     }
 }

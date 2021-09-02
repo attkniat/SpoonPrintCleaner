@@ -1,6 +1,7 @@
 ﻿using SpoonPrinterCleaner.SpoonPrinterInterfaces;
 using System;
 using System.Collections.Generic;
+using System.ServiceProcess;
 using System.Text;
 
 namespace SpoonPrinterCleaner.SpoonPrinterServices
@@ -12,14 +13,27 @@ namespace SpoonPrinterCleaner.SpoonPrinterServices
             throw new NotImplementedException();
         }
 
-        public void TurnOffSpoonServicePrinter()
+        public void StarStopSpoonServicePrinter()
         {
-            throw new NotImplementedException();
-        }
+            ServiceController sc = new ServiceController("Spooler");
 
-        public void TurnOnSpoonServicePrinter()
-        {
-            throw new NotImplementedException();
+            Console.WriteLine("The Spooler service status is currently set to {0}",
+                  sc.Status.ToString());
+
+            if ((sc.Status.Equals(ServiceControllerStatus.Stopped)) ||
+                 (sc.Status.Equals(ServiceControllerStatus.StopPending)))
+            {
+                Console.WriteLine("Starting the Spooler service...");
+                sc.Start();
+            }
+            else
+            {
+                Console.WriteLine("Stopping the Spooler service...");
+                sc.Stop();
+            }
+
+            sc.Refresh();
+            Console.WriteLine("The Spooler service status is now set to {0}.", sc.Status.ToString());
         }
     }
 }
