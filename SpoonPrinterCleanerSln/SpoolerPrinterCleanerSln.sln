@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpoonPrinterCleaner", "SpoonPrinterCleaner\SpoonPrinterCleaner.csproj", "{C561B559-2782-4E44-9E9A-FB655093DB41}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpoolerPrinterCleaner", "SpoonPrinterCleaner\SpoolerPrinterCleaner.csproj", "{C561B559-2782-4E44-9E9A-FB655093DB41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SpoonPrinterCleaner.SpoonPrinterServices
 {
-    public class SpoonPrinterService : ISpoonPrinterService
+    public class SpoolerPrinterService : ISpoolerPrinterService
     {
         public void ClearQueuePrinter()
         {

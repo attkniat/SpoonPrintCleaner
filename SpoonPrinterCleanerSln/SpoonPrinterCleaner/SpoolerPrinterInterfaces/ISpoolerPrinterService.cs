@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SpoonPrinterCleaner.SpoonPrinterInterfaces
 {
-    public interface ISpoonPrinterService
+    public interface ISpoolerPrinterService
     {
         void TurnOffSpoonServicePrinter(); 
         void TurnOnSpoonServicePrinter();
