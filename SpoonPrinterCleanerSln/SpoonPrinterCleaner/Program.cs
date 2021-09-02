@@ -1,12 +1,18 @@
-﻿using System;
+﻿using SpoonPrinterCleaner.SpoonPrinterInterfaces;
+using SpoonPrinterCleaner.SpoonPrinterServices;
+using System;
 
 namespace SpoonPrinterCleaner
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var service = new SpoolerPrinterService();
+
+            service.StarStopSpoonServicePrinter();
+            service.ClearQueuePrinter();
+            service.StarStopSpoonServicePrinter();
         }
     }
 }

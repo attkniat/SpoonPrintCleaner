@@ -1,6 +1,7 @@
 ﻿using SpoonPrinterCleaner.SpoonPrinterInterfaces;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.ServiceProcess;
 using System.Text;
 
@@ -10,7 +11,14 @@ namespace SpoonPrinterCleaner.SpoonPrinterServices
     {
         public void ClearQueuePrinter()
         {
-            throw new NotImplementedException();
+            DirectoryInfo dir = new DirectoryInfo(@"C:\Windows\System32\spool\PRINTERS");
+            if (dir.Exists)
+            {
+                foreach (var fileQueue in dir.GetFiles())
+                {
+                    fileQueue.Delete();
+                }
+            }
         }
 
         public void StarStopSpoonServicePrinter()
