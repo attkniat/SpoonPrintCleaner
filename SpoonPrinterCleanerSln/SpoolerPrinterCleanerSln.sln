@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpoolerPrinterCleaner", "SpoonPrinterCleaner\SpoolerPrinterCleaner.csproj", "{C561B559-2782-4E44-9E9A-FB655093DB41}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SpoolerFixerPrint", "SpoolerFixerPrint\SpoolerFixerPrint.vdproj", "{13905A25-8065-411D-9068-B3779F1F2F05}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,8 +15,6 @@ Global
 		{C561B559-2782-4E44-9E9A-FB655093DB41}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{C561B559-2782-4E44-9E9A-FB655093DB41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C561B559-2782-4E44-9E9A-FB655093DB41}.Release|Any CPU.Build.0 = Release|Any CPU
-		{13905A25-8065-411D-9068-B3779F1F2F05}.Debug|Any CPU.ActiveCfg = Debug
-		{13905A25-8065-411D-9068-B3779F1F2F05}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
